@@ -1,0 +1,81 @@
+/**   [ Table Of Contebts ]
+  1 - Variables
+  2 - Mixins
+  3 - Home Page
+  4 - Settings Page
+  5 - Shared
+*/
+
+//---[ Variables ]---
+$shadow : 1px 2px 5px 0px rgba(0,0,0,0.32);
+
+//---[ Mixins ]---
+@mixin alignLeft {
+    text-align   : left;
+    padding-left : 3%;
+}
+
+//---[ Home Page ]---
+.text_qustion{
+    height: 30px;
+}
+.c_row{
+    display         : flex;
+    flex-direction  : row;
+    justify-content : center;
+    align-items     : center;
+    flex-wrap       : wrap;
+    gap             : 5%;
+    margin-bottom   : 30px;
+
+    .city{
+        width            : 45%;
+        min-height       : 90px;
+        border-radius    : 5px;
+        box-shadow       : $shadow ;
+        cursor           : pointer;
+        background-color : rgb(149, 238, 238);
+        padding          : 1;
+    }
+
+}
+.score{
+    text-align: left;
+    padding: 10px;
+    padding-left: 3%;
+
+    .score_text{
+        color: rgb(14, 182, 8);
+    }
+}
+
+button{
+    padding : 8px;
+    cursor  : pointer;
+}
+
+//---[ Settings Page ]---
+form{
+    margin-bottom: 30px;
+}
+.c_input, .settings, .form_header{
+    @include alignLeft
+}
+.c_history{
+    padding: 5;
+    display: flex;
+    flex-direction: column;
+}
+.history_item{
+    width: 40%;
+    background-color: rgb(238, 237, 236);
+    border-radius: 5px;
+    box-shadow: $shadow;
+}
+
+//---[ Shared ]---
+.highlight{
+    border-style: solid;
+    border-color: rgb(7, 133, 74);
+    border-width: 3px;
+}

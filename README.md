@@ -1,19 +1,12 @@
-# weather-game
 
-## Project setup
-```
-npm install
-```
+# Описание
+Игра в которой надо угадать в каком городе теплее .
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Использует API [openweathermap](https://openweathermap.org/api).
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
+#### Используемые технологии:
+```
+- Vue 3 ( Vuex )
+```
