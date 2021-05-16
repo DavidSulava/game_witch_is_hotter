@@ -40,7 +40,7 @@ export default {
     const { NEW_PAIR, API_CALL }     = useDispatch(['NEW_PAIR','API_CALL']);
     const { SET_SCORE, SET_HISTORY } = useMutation(['SET_SCORE', 'SET_HISTORY']);
 
-    const msg_default = 'Witch city is hotter ?';
+    const msg_default = 'Wich city is hotter ?';
     const msg_win     = 'You wone! 😀';
     const msg_lose    = 'You lose ☹️';
 
