@@ -55,7 +55,7 @@ export default createStore({
         const [lat, lon] = [56.85006248230474, 53.22942012532568] // Ижевск
         const apiKey = 'e413654e90c686ecc2c6a644de1e6883';
 
-        const API    = `http://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${lon}&cnt=50&&units=${state.units}&bbox=12,32,15,37,25&lang=en&appid=${apiKey}`;
+        const API    = `https://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${lon}&cnt=50&&units=${state.units}&bbox=12,32,15,37,25&lang=en&appid=${apiKey}`;
 
         const response = await fetch(API);
         const data     = await response.json();
